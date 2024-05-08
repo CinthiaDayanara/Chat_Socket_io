@@ -38,7 +38,7 @@ function App() {
   return (
     <div className="h-screen bg-zinc-800 text-white flex items-center justify-center ">
       <form onSubmit={handleSubmit} className='rounded-md border-x-4 bg-zinc-700 p-10'>
-        <h1 className="text-2x1 font-bold my-2">Chat wasak</h1>
+        <h1 className="text-2x1 font-bold my-2 text-violet-700">Chat wasapo</h1>
         <input type="text" onChange={e => setMessage(e.target.value)}
           value={message}
           className='text-align:down left rounded-md border-zinc-500 p-2 text-black w-full'
