@@ -37,7 +37,7 @@ function App() {
 
   return (
     <div className="h-screen bg-zinc-800 text-white flex items-center justify-center ">
-      <form onSubmit={handleSubmit} className='rounded-md border-x-4 bg-zinc-900 p-10'>
+      <form onSubmit={handleSubmit} className='rounded-md border-x-4 bg-zinc-700 p-10'>
         <h1 className="text-2x1 font-bold my-2">Chat wasak</h1>
         <input type="text" onChange={e => setMessage(e.target.value)}
           value={message}
@@ -46,7 +46,7 @@ function App() {
 
         <ul className='h-80 overflow-y-auto'>
           {messages.map((message, index) => (
-            <li key={index} className={`my-2 p-2 table text-sm rounded-md ${message.from === "Me" ? "bg-green-900 ml-auto" : "bg-zinc-800"}`}>
+            <li key={index} className={`my-2 p-2 table text-sm rounded-md ${message.from === "Me" ? "bg-blue-500 ml-auto" : "bg-indigo-400"}`}>
               <p>{message.from} : {message.body}</p>
             </li>
           ))
