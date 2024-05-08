@@ -29,7 +29,7 @@ io.on('connection', (socket) => {
     socket.on('message', (message) => {
         socket.broadcast.emit('message', {
             body: message,
-            from: socket.id
+            from: socket.id.substring(0,4)
         })
     })
 })
